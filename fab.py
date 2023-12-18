@@ -48,3 +48,30 @@ def fab2(n):
     
 
 print(fab2(8))
+
+# Generate fibanacci number with a generator 
+# what we mean by generator in python?? in general too 
+# Generator is a function with yield keybord Istead of return
+# It support iteration and return generator iterator by calling yiled
+# generator can have one or more yiled 
+# by using next() it resume from where it called yiled  not from the beginnig 
+
+
+def mygenerator():
+    yield 1
+    yield 2 
+    yield 3 
+    yield 4
+
+mygen = mygenerator()
+print (mygen)
+print(next(mygen))
+print("#" *50)
+print(next(mygen))
+
+# let's try for loop to see the iteration
+
+for _ in mygen:
+    print(_)
+# the out put the last two value 3 and 4, because it resume from the last iteration, it won't get back to the first element of the generator
+# Ehuuuuum I liked this generator
