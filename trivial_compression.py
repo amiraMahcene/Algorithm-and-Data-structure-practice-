@@ -1,4 +1,11 @@
 from sys import getsizeof
+
+class compressgen:
+   def __init__(self, gene:str) -> None:
+      self._compress(gene)
+
+
+       
 def _compress(self, gene: str) -> None:
      self.bit_string: int = 1 # start with sentinel
      for nucleotide in gene.upper():
@@ -29,6 +36,8 @@ def decompress(self) -> str:
         else:
            raise ValueError("Invalid bits:{}".format(bits))
            return gene[::-1] # [::-1] reverses string by slicing backward
+
+
 if __name__ == "__main__":
 
    original: str ="TAGGGATTAACCGTTATATATATATAGCCATGGATCGATTATATAGGGATTAACCGTTATATATATATAGCCATGGATCGATTATA" * 100
