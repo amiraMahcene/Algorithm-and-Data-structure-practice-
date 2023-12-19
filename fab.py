@@ -94,3 +94,10 @@ print(fab3(5))
 # last+next: This calculates the sum of last and next. This is the new value for next.
 # next: This is the current value of next. This is the new value for last.
 # simultaneous or parallel assignment
+
+a = 5
+b = 6
+d = 7
+
+a,b = d+1,a
+print (a,b,d)
