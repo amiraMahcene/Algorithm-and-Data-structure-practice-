@@ -75,3 +75,22 @@ for _ in mygen:
     print(_)
 # the out put the last two value 3 and 4, because it resume from the last iteration, it won't get back to the first element of the generator
 # Ehuuuuum I liked this generator
+
+# let's understand the point we did not understand yesturday
+# okay 
+def fab3(n):
+    if n == 0 :
+        return n
+    else:
+        last = 0
+        next = 1
+        for _ in range(1,n):
+            last, next = next, last+next
+        return next
+    
+print(fab3(5))
+# I got it lemme explain 
+# all the secret is here :  The right-hand side (next, last+next) is evaluated first.
+# last+next: This calculates the sum of last and next. This is the new value for next.
+# next: This is the current value of next. This is the new value for last.
+# simultaneous or parallel assignment
