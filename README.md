@@ -3,6 +3,7 @@ sion, and manipulation at the bit level) are so common in modern software develo
 ment that it is impossible to imagine the world of computing without them. Although
 problems can be solved without them, it is often more logical or performant to solve
 problems with them.
+
 Recursion, in particular, is at the heart of not just many algorithms, but even whole
 programming languages. In some functional programming languages, like Scheme
 and Haskell, recursion takes the place of the loops used in imperative languages. It is
