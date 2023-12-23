@@ -9,6 +9,7 @@ programming languages. In some functional programming languages, like Scheme
 and Haskell, recursion takes the place of the loops used in imperative languages. It is
 worth remembering, though, that anything accomplishable with a recursive technique
 is also accomplishable with an iterative technique.
+
 Memoization has been applied successfully to speed up the work of parsers (pro-
 grams that interpret languages). It is useful in all problems where the result of a
 recent calculation will likely be asked for again. Another application of memoization
@@ -16,6 +17,7 @@ is in language runtimes. Some language runtimes (versions of Prolog, for instanc
 will store the results of function calls automatically (auto-memoization), so that the func-
 tion need not execute the next time the same call is made. This is similar to how the
 @lru_cache() decorator in fib6() worked.
+
 Compression has made an internet-connected world constrained by bandwidth
 more tolerable. The bit-string technique examined in section 1.2 is usable for real-
 world simple data types that have a limited number of possible values, for which even
@@ -28,5 +30,6 @@ our example) for the original data to be reconstructed, which is cumbersome and
 defeats the goal of most encryption schemes (keeping keys secret). But you may be inter-
 ested to know that the name “one-time pad” comes from spies using real paper pads with
 dummy data on them to create encrypted communications during the Cold War.
+
 These techniques are programmatic building blocks that other algorithms are
 built on top of.
